@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/*---------------------------index grid----------------------------------*/
+#index__grid {
+  background-color: rgb(128, 60, 60);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "section";
+}
+#index__header {
+  grid-area: header;
+  background-color: white;
+  border-bottom: 1px solid #c4c3c3;
+}
+#index__section {
+  grid-area: section;
+  background-color: royalblue;
+}
+#index__footer {
+  display: none;
+}
+/* --------header-------- */
+.header__logo {
+  display: none;
+}
+.header__title {
+  color: black;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.header__title--p {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.menu__icon {
+  width: 3rem;
+}
+.header__index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header__nav ul li {
+  display: none;
+}
+/* --------section-------- */
+.section__img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------------------------galeria grid---------------------------------*/
+#gallery__grid {
+  background-color: rgb(128, 60, 60);
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 10% 1fr 15%;
+  grid-template-areas:
+    "header"
+    "button"
+    "section"
+    "footer";
+}
+#gallery__header {
+  grid-area: header;
+  background-color: aqua;
+}
+#gallery__button {
+  grid-area: button;
+  background-color: salmon;
+}
+#gallery__section {
+  grid-area: section;
+  background-color: royalblue;
+}
+#gallery__footer {
+  grid-area: footer;
+  background-color: yellow;
+}
+
+/*---------------------------tienda grid---------------------------------*/
+#store__grid {
+  background-color: rgb(128, 60, 60);
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 10% 1fr 15%;
+  grid-template-areas:
+    "header"
+    "button"
+    "section"
+    "footer";
+}
+#store__header {
+  grid-area: header;
+  background-color: aqua;
+}
+#store__button {
+  grid-area: button;
+  background-color: salmon;
+}
+#store__section {
+  grid-area: section;
+  background-color: royalblue;
+}
+#store__footer {
+  grid-area: footer;
+  background-color: yellow;
+}
+
+/*--------------------------sobre mi grid---------------------------------*/
+#about__grid {
+  background-color: rgb(128, 60, 60);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "button"
+    "section"
+    "footer";
+}
+#about__header {
+  grid-area: header;
+  background-color: white;
+  border-bottom: 1px solid #c4c3c3;
+}
+#about__button {
+  grid-area: button;
+  background-color: white;
+}
+#about__section {
+  grid-area: section;
+  background-color: white;
+}
+
+#about__footer {
+  grid-area: footer;
+  background-color: white;
+}
+/* --------header-------- */
+.header__logo {
+  display: none;
+}
+.header__title {
+  color: black;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.header__title--p {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.menu__icon {
+  width: 3rem;
+}
+.header__index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header__nav ul li {
+  display: none;
+}
+/* --------button-------- */
+.button__about {
+  padding: 1.5rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.idiom {
+  color: white;
+  padding: 10px 16px 10px 16px;
+  background-color: #c79d6c;
+  border-radius: 2rem;
+}
+/* --------section-------- */
+.section__about {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section__about--img {
+  max-width: 100%;
+  height: auto;
+}
+.section__about--p {
+  padding: 1.5rem;
+}
+/* --------footer-------- */
+
+.footer__icons {
+  display: flex;
+  flex-grow: row nowrap;
+  justify-content: space-evenly;
+  padding: 0px 1.5rem 0px 1.5rem;
+}
+
+.footer__icons--size {
+  width: 2.188em;
+  height: 2.188em;
+}
+
+.footer__newsletter {
+  margin: 1.5rem;
+  /*padding-left: 2rem; */
+}
+
+.newsletter__email--title {
+  padding-left: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.newsletter__email--box {
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 195px;
+  padding: 10px 0px 10px 13px;
+  border-radius: 20px;
+}
+.newsletter__email--button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.derechos {
+  margin-top: 10px;
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/*--------------------------contacto grid---------------------------------*/
+#contact__grid {
+  background-color: rgb(128, 60, 60);
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 10% 1fr 15%;
+  grid-template-areas:
+    "header"
+    "button"
+    "section"
+    "footer";
+}
+#contact__header {
+  grid-area: header;
+  background-color: aqua;
+}
+#contact__button {
+  grid-area: button;
+  background-color: salmon;
+}
+#contact__section {
+  grid-area: section;
+  background-color: royalblue;
+}
+#contact__footer {
+  grid-area: footer;
+  background-color: yellow;
+}
+
+@media (min-width: 320px) {
+  /*--------------------------sobre mi grid---------------------------------*/
+  #about__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% auto 1fr auto;
+    grid-template-areas:
+      "header  header"
+      "button button"
+      "section section"
+      "footer  footer";
+  }
+  /* --------section-------- */
+  .section__about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__about--img {
+    padding: 5rem 2.5rem 5rem 5rem;
+    max-width: 50%;
+    height: auto;
+  }
+  .section__about--p {
+    padding: 5rem 5rem 5rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*---------------------------index grid----------------------------------*/
+  #index__grid {
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "header  section"
+      "footer section";
+  }
+  #index__footer {
+    background-color: white;
+    display: block;
+    grid-area: footer;
+  }
+  /* --------header-------- */
+  #index__header {
+    border-bottom: none;
+    border-right: 1px solid #c4c3c3;
+  }
+  #index__footer {
+    border-right: 1px solid #c4c3c3;
+  }
+  .header__nav ul li {
+    color: black;
+    line-height: 2.188rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    display: block;
+    padding-left: 4.3rem;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo--img {
+    margin-top: 1.5rem;
+    width: 9rem;
+  }
+  .header__nav ul {
+    margin-top: 1.5rem;
+  }
+  .menu__icon {
+    display: none;
+  }
+  .header__index {
+    display: block;
+    justify-content: none;
+    align-items: none;
+    padding: 1.5rem;
+  }
+  /* --------section-------- */
+
+  /*no entiendo xq si lo dejo como estaba no me completa toda la pantalla
+  .section__img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+  .section__img {
+    width: 100vw;
+  }
+
+  /* --------footer-------- */
+
+  .footer__icons {
+    display: flex;
+    flex-grow: row nowrap;
+    justify-content: space-evenly;
+    padding: 0px 1.5rem 0px 1.5rem;
+  }
+
+  .footer__icons--size {
+    width: 2.188em;
+    height: 2.188em;
+  }
+
+  .footer__newsletter {
+    margin: 1.5rem;
+    /*padding-left: 2rem; */
+  }
+
+  .newsletter__email--title {
+    padding-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .newsletter__email--box {
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    width: 195px;
+    padding: 10px 0px 10px 13px;
+    border-radius: 20px;
+  }
+  .newsletter__email--button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .derechos {
+    margin-top: 10px;
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  /*--------------------------galeria grid---------------------------------*/
+  #gallery__grid {
+    color: blueviolet;
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 15%;
+    grid-template-areas:
+      "header  button button button"
+      "header section section section"
+      "footer section section section";
+  }
+  /*---------------------------tienda grid---------------------------------*/
+  #store__grid {
+    color: blueviolet;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 15%;
+    grid-template-areas:
+      "header"
+      "section"
+      "footer";
+  }
+  #store__button {
+    display: none;
+  }
+  /*--------------------------sobre mi grid---------------------------------*/
+  #about__grid {
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: 15% auto auto;
+    grid-template-areas:
+      "header  button button button"
+      "header section section section"
+      "footer section section section";
+  }
+  #about__header {
+    border-bottom: none;
+    border-right: 1px solid #c4c3c3;
+  }
+  #about__footer {
+    border-right: 1px solid #c4c3c3;
+  }
+  /* --------button-------- */
+  .button__about {
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .idiom {
+    color: white;
+    padding: 10px 16px 10px 16px;
+    background-color: #c79d6c;
+    border-radius: 2rem;
+  }
+  /*--------------------------contacto grid---------------------------------*/
+  #contact__grid {
+    color: blueviolet;
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 15%;
+    grid-template-areas:
+      "header  button button button"
+      "header section section section"
+      "footer section section section";
+  }
+}
