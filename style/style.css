@@ -43,6 +43,28 @@ a:active {
   text-align: center;
   font-size: 2rem;
 }
+/* ----animacion--- */
+.animation {
+  background: linear-gradient(
+    to right,
+    black 0,
+    rgb(102, 102, 102) 10%,
+    black 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  animation: shine 2s infinite linear;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
 .header__title--p {
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -75,7 +97,7 @@ a:active {
   height: 100vh;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 10% 1fr 15%;
+  grid-template-rows: 15% auto 1fr auto;
   grid-template-areas:
     "header"
     "button"
@@ -84,21 +106,36 @@ a:active {
 }
 #gallery__header {
   grid-area: header;
-  background-color: aqua;
+  background-color: white;
+  border-bottom: 1px solid #c4c3c3;
 }
 #gallery__button {
   grid-area: button;
-  background-color: salmon;
+  background-color: white;
 }
 #gallery__section {
   grid-area: section;
-  background-color: royalblue;
+  background-color: white;
 }
 #gallery__footer {
   grid-area: footer;
-  background-color: yellow;
+  background-color: white;
+  border-top: 1px solid #c4c3c3;
 }
-
+/* --------button-------- */
+.button__gallery {
+  padding: 1.5rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
 /*---------------------------tienda grid---------------------------------*/
 #store__grid {
   background-color: rgb(128, 60, 60);
@@ -346,18 +383,15 @@ a:active {
       "header  section"
       "footer section";
   }
-  #index__footer {
-    background-color: white;
-    display: block;
-    grid-area: footer;
-  }
   /* --------header-------- */
   #index__header {
     border-bottom: none;
     border-right: 1px solid #c4c3c3;
   }
-  #index__footer {
-    border-right: 1px solid #c4c3c3;
+
+  .menu__content {
+    display: flex;
+    justify-content: center;
   }
   .header__nav ul li {
     color: black;
@@ -367,7 +401,6 @@ a:active {
     font-weight: bold;
     letter-spacing: 0.125rem;
     display: block;
-    padding-left: 4.3rem;
   }
   .header__logo {
     display: flex;
@@ -387,7 +420,7 @@ a:active {
     display: block;
     justify-content: none;
     align-items: none;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
   /* --------section-------- */
 
@@ -402,7 +435,15 @@ a:active {
   }
 
   /* --------footer-------- */
-
+  #index__footer {
+    /* position: fixed; */
+    background-color: white;
+    display: block;
+    grid-area: footer;
+  }
+  #index__footer {
+    border-right: 1px solid #c4c3c3;
+  }
   .footer__icons {
     display: flex;
     flex-grow: row nowrap;
@@ -421,22 +462,22 @@ a:active {
   }
 
   .newsletter__email--title {
-    padding-left: 15px;
+    padding-left: 0.938rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     letter-spacing: 2px;
   }
 
   .newsletter__email--box {
     font-family: "Montserrat", sans-serif;
-    font-size: 9px;
+    font-size: 0.563rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    width: 195px;
-    padding: 10px 0px 10px 13px;
-    border-radius: 20px;
+    letter-spacing: 0.063rem;
+    margin-top: 0.625rem;
+    width: 12.188rem;
+    padding: 0.625rem 0px 0.625rem 0.813rem;
+    border-radius: 1.25rem;
   }
   .newsletter__email--button {
     font-family: "Montserrat", sans-serif;
@@ -446,6 +487,7 @@ a:active {
   }
   .derechos {
     margin-top: 10px;
+    margin-bottom: 1.5rem;
     padding-left: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -455,13 +497,36 @@ a:active {
 
   /*--------------------------galeria grid---------------------------------*/
   #gallery__grid {
-    color: blueviolet;
     grid-template-columns: 20% 1fr 1fr 1fr;
-    grid-template-rows: 10% 1fr 15%;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
       "header  button button button"
       "header section section section"
       "footer section section section";
+  }
+  /* --------header-------- */
+  #gallery__header {
+    border-bottom: none;
+    border-right: 1px solid #c4c3c3;
+  }
+  /* --------button-------- */
+  .button__gallery {
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  /* --------footer-------- */
+  #gallery__footer {
+    border-right: 1px solid #c4c3c3;
+    border-top: none;
   }
   /*---------------------------tienda grid---------------------------------*/
   #store__grid {
