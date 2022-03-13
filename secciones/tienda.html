@@ -8,30 +8,113 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tienda - Ari Mayorga Studio</title>
-   <link rel="stylesheet" href="../style/style.css">
    <link rel="shorcut icon" href="../img/favicon.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body id="store__grid">
-   <header id="store__header">
-      <h2>head</h2>
-   </header>
-   <div id="store__button">
-      <h2>tienda - boton</h2>
+<body>
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-12 header__store">
+
+            <div class="header__index--logo">
+               <a href="../index.html">
+                  <h1 class="header__title animation">Ari Mayorga</h1>
+               </a>
+               <a href="../index.html">
+                  <p class="header__title--p animation">-Studio-</p>
+               </a>
+            </div>
+
+            <nav class="nav__store">
+               <ul class="nav__store--secciones">
+                  <li>
+                     <a class="nav__store--li d-none d-lg-block" href="../index.html">INICIO</a>
+                  </li>
+                  <li>
+                     <a class="nav__store--li d-none d-lg-block" href="../secciones/galeria.html">GALERÍA</a>
+                  </li>
+                  <li>
+                     <a class="nav__store--li d-none d-lg-block" href="../secciones/tienda.html">TIENDA</a>
+                  </li>
+                  <li>
+                     <a class="nav__store--li d-none d-lg-block" href="../secciones/sobremi.html">SOBRE MÍ</a>
+                  </li>
+                  <li>
+                     <a class="nav__store--li d-none d-lg-block" href="../secciones/contacto.html">CONTACTO</a>
+                  </li>
+                  <li>
+                     <a class="nav__store--li idiom d-none d-lg-block" href="">ESP / EN</a>
+                  </li>
+                  <li>
+                     <img src="../img/iconos/menu2.png" alt="menu icon" class="menu__icon d-block d-lg-none">
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
    </div>
 
-   <section id="store__section">
-      <h2>section</h2>
-   </section>
+   <div class="container-fluid padding__store">
+      <div class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+         <!-- padding__img"             gallery__img -->
+         <div class="col flex__store"><img class=" store__img" src="../img/other/3_matienzo.jpg"
+               alt="ilustracion: unico">
+            <p class="title__typo">El miedo inicial</p>
+            <p class="title__typo--price">$920,00 - $4.520,00</p>
+         </div>
 
-   <footer id="store__footer">
-      <h2>footer</h2>
-   </footer>
+         <div class="col flex__store"><img class="store__img" src="../img/other/1_spider.jpg"
+               alt="ilustracion: retrato">
+            <p class="title__typo">Rejected</p>
+            <p class="title__typo--price">$920,00 - $2.220,00</p>
+         </div>
+
+         <div class="col flex__store"><img class=" store__img" src="../img/other/6_mrblue.jpg" alt="ilustracion: unico">
+            <p class="title__typo">Mr. Blue</p>
+            <p class="title__typo--price">$920,00 - $3.520,00</p>
+         </div>
+
+         <div class="col d-lg-none d-xl-block flex__store"><img class=" store__img" src="../img/other/4_ptv.jpg"
+               alt="ilustracion: portada ptv">
+            <p class="title__typo">Capitulo II: Hambre</p>
+            <p class="title__typo--price">$920,00 - $5.760,00</p>
+         </div>
+
+      </div>
+   </div>
 
 
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-12 footer__store">
+
+            <div class="flex__footer">
+               <form class="footer__newsletter">
+                  <div class="newsletter__email">
+                     <label class="newsletter__email--title" for="email">NEWSLETTER</label>
+                     <br>
+                     <input class="newsletter__email--box" type="email" name="email" placeholder="INGRESA TU EMAIL">
+                     <input class="newsletter__email--button" type="submit" value="SUSCRIBIRSE">
+                  </div>
+               </form>
+               <p class="derechos">Ari Mayorga 2022. <br> Todos los derechos reservados.</p>
+            </div>
+
+            <div class="icons__footer">
+               <img class="footer__icons--size" src="../img/iconos/carrito.png" alt="Carro de compras">
+               <a href="https://www.instagram.com/ari.mayorga.art/?hl=en"><img class="footer__icons--size"
+                     src="../img/iconos/ig.png" alt="Instagram"></a>
+               <img class="footer__icons--size" src="../img/iconos/fb.png" alt="Facebook">
+               <img class="footer__icons--size" src="../img/iconos/tw.png" alt="Twitter">
+            </div>
+         </div>
+      </div>
+   </div>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

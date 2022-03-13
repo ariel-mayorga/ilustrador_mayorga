@@ -8,28 +8,116 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Contacto - Ari Mayorga Studio</title>
-   <link rel="stylesheet" href="../style/style.css">
+
    <link rel="shorcut icon" href="../img/favicon.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body id="contact__grid">
    <header id="contact__header" class="header__index">
-      <h2>header</h2>
+      <div class="header__index--logo">
+         <a href="../index.html">
+            <h1 class="header__title animation">Ari Mayorga</h1>
+         </a>
+         <a href="./index.html">
+            <h2 class="header__title--p animation">-Studio-</h2>
+         </a>
+         <div class="header__logo">
+            <a href="../index.html"><img src="../img/logo_png.png" alt="logo" class="header__logo--img"></a>
+         </div>
+      </div>
+
+      <nav class="header__nav">
+         <div>
+            <img src="../img/iconos/menu2.png" alt="menu icon" class="menu__icon">
+         </div>
+         <div class="menu__content">
+            <ul>
+               <li>
+                  <a href="../index.html">INICIO</a>
+               </li>
+               <li>
+                  <a href="../secciones/galeria.html">GALERÍA</a>
+               </li>
+               <li>
+                  <a href="../secciones/tienda.html">TIENDA</a>
+               </li>
+               <li>
+                  <a href="../secciones/sobremi.html">SOBRE MÍ</a>
+               </li>
+               <li>
+                  <a href="../secciones/contacto.html">CONTACTO</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
    </header>
 
-   <div id="contact__button">
-      <h2>contacto - boton</h2>
+   <div id="contact__button" class="button__contact">
+      <h2 class="contact__button--title">Contacto</h2>
+      <a class="contact__button--i idiom" href="">ESP / EN</a>
    </div>
 
    <section id="contact__section">
-      <h2>section</h2>
+      <div>
+         <h2 class="contact__e-mail">E-MAIL</h2>
+         <p class="contact__e-mail--p">ari.mayorga.dg@gmail.com</p>
+      </div>
+      </div>
+      <form>
+         <div class="row form__row">
+            <div class="col-md-6">
+               <div class="form-group pb-3">
+                  <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+               <div class="form-group pb-3">
+                  <input type="email" class="form-control" name="E-mail" placeholder="E-mail">
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+               <div class="form-group pb-3">
+                  <input type="text" class="form-control" name="Asunto" placeholder="Asunto">
+               </div>
+            </div>
+            <div class="col-md-12">
+               <div class="form-group pb-3">
+                  <textarea name="Mensaje" class="form-control" cols="30" rows="7" placeholder="Mensaje"></textarea>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <div class="form-group">
+                  <input type="submit" value="ENVIAR MENSAJE" class="btn btn-dark">
+                  <div class="submitting"></div>
+               </div>
+            </div>
+         </div>
+      </form>
+      </div>
    </section>
 
-   <footer id="contact__footer">
-      <h2>footer</h2>
+   <footer id="contact__footer" class="footer__index">
+      <div class="footer__icons">
+         <img class="footer__icons--size" src="../img/iconos/carrito.png" alt="Carro de compras">
+         <a href="https://www.instagram.com/ari.mayorga.art/?hl=en"><img class="footer__icons--size"
+               src="../img/iconos/ig.png" alt="Instagram"></a>
+         <img class="footer__icons--size" src="../img/iconos/fb.png" alt="Facebook">
+         <img class="footer__icons--size" src="../img/iconos/tw.png" alt="Twitter">
+      </div>
+
+      <form class="footer__newsletter">
+         <div class="newsletter__email">
+            <label class="newsletter__email--title" for="email">NEWSLETTER</label>
+            <input class="newsletter__email--box" type="email" name="email" placeholder="INGRESA TU EMAIL">
+            <input class="newsletter__email--button" type="submit" value="SUSCRIBIRSE">
+         </div>
+      </form>
+
+      <p class="derechos">Ari Mayorga 2022. Todos los derechos reservados.</p>
    </footer>
 
 
