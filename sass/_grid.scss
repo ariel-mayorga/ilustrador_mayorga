@@ -1,0 +1,57 @@
+/*--------------------------index grid---------------------------------*/
+#index__grid {
+  background-color: $backgroundColor;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "section";
+}
+#index__header {
+  grid-area: header;
+  background-color: $backgroundColor;
+  border-bottom: $borderColor;
+}
+#index__section {
+  grid-area: section;
+  background-color: $backgroundColor;
+}
+#index__footer {
+  display: none;
+}
+
+/*--------------------------galeria grid---------------------------------*/
+#gallery__grid {
+  background-color: $backgroundColor;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "button"
+    "section"
+    "footer";
+}
+#gallery__header {
+  grid-area: header;
+  background-color: $backgroundColor;
+  border-bottom: $borderColor;
+}
+#gallery__button {
+  grid-area: button;
+  background-color: $backgroundColor;
+}
+#gallery__section {
+  grid-area: section;
+  background-color: $backgroundColor;
+}
+#gallery__footer {
+  grid-area: footer;
+  background-color: $backgroundColor;
+  border-top: $borderColor;
+}
