@@ -45,6 +45,34 @@
 .menu__icon {
   width: 3rem;
 }
+.boton {
+  border: none;
+  background-color: white;
+}
+
+.secciones {
+  display: none;
+  right: 0.5px;
+  a {
+    background-color: white;
+    text-decoration: none;
+    text-align: end;
+    color: black;
+    display: block;
+    padding: 0.625em;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.desplegable {
+  position: relative;
+  &:hover .secciones {
+    display: block;
+    position: absolute;
+  }
+}
 .header__index {
   display: flex;
   justify-content: space-between;

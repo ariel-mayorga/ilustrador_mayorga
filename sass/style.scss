@@ -19,12 +19,23 @@ a:active {
   height: auto;
 }
 
+$redes: (
+  carrito: rgb(46, 207, 46),
+  instagram: #c25e30,
+  facebook: #3a5795,
+  twitter: #55acee,
+);
+
+@each $red, $color in $redes {
+  .icon--#{$red} {
+    color: $color;
+  }
+}
+
 /*--------------------------galeria grid---------------------------------*/
 /* -------gallery-------- */
 /*---------------------------tienda---------------------------------*/
-
 /* -------section-------- */
-
 .padding__store {
   display: flex;
   justify-content: space-evenly;
@@ -59,7 +70,7 @@ a:active {
   font-size: 0.8em;
   font-weight: bold;
   letter-spacing: 2px;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 /* -------footer-------- */
 
@@ -81,7 +92,7 @@ a:active {
 
 /*--------------------------sobre mi grid---------------------------------*/
 #about__grid {
-  background-color: rgb(128, 60, 60);
+  background-color: white;
   height: 100vh;
   width: 100%;
   display: grid;
@@ -110,9 +121,10 @@ a:active {
 #about__footer {
   grid-area: footer;
   background-color: white;
+  border-top: 1px solid #c4c3c3;
 }
 /* --------button-------- */
-.button__about {
+.button {
   padding: 1.5rem;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -120,16 +132,24 @@ a:active {
   font-weight: bold;
   letter-spacing: 2px;
   list-style-type: none;
+}
+
+.button__about {
+  @extend .button;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
 }
+@mixin idiom($color, $backgroud, $border) {
+  color: $color;
+  background-color: $backgroud;
+  border-radius: $border;
+}
+
 .idiom {
-  color: white;
+  @include idiom(white, #c79d6c, 2rem);
   padding: 10px 16px 10px 16px;
-  background-color: #c79d6c;
-  border-radius: 2rem;
 }
 /* --------section-------- */
 .section__about {
@@ -198,7 +218,7 @@ a:active {
 }
 /*--------------------------contacto grid---------------------------------*/
 #contact__grid {
-  background-color: rgb(128, 60, 60);
+  background-color: white;
   display: grid;
   height: 100vh;
   width: 100%;
@@ -230,13 +250,7 @@ a:active {
 }
 /* --------button-------- */
 .button__contact {
-  padding: 1.5rem;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  list-style-type: none;
+  @extend .button;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -320,6 +334,7 @@ a:active {
   }
   .header__nav ul li {
     color: black;
+    text-decoration: none;
     line-height: 2.188rem;
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
@@ -340,6 +355,12 @@ a:active {
   }
 
   .menu__icon {
+    display: none;
+  }
+  .desplegable {
+    display: none;
+  }
+  secciones {
     display: none;
   }
   .header__index {
@@ -428,8 +449,9 @@ a:active {
     border-right: 1px solid #c4c3c3;
   }
   /* --------button-------- */
+
   .button__gallery {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -464,11 +486,12 @@ a:active {
     border-right: 1px solid #c4c3c3;
   }
   #about__footer {
+    border-top: none;
     border-right: 1px solid #c4c3c3;
   }
   /* --------button-------- */
   .button__about {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -502,7 +525,7 @@ a:active {
   }
   /* --------button-------- */
   .button__contact {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;

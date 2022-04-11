@@ -86,6 +86,29 @@
 .menu__icon {
   width: 3rem; }
 
+.boton {
+  border: none;
+  background-color: white; }
+
+.secciones {
+  display: none;
+  right: 0.5px; }
+  .secciones a {
+    background-color: white;
+    text-decoration: none;
+    text-align: end;
+    color: black;
+    display: block;
+    padding: 0.625em; }
+    .secciones a:hover {
+      background-color: #f1f1f1; }
+
+.desplegable {
+  position: relative; }
+  .desplegable:hover .secciones {
+    display: block;
+    position: absolute; }
+
 .header__index {
   display: flex;
   justify-content: space-between;
@@ -136,6 +159,19 @@
 .padding__container {
   padding: 2rem; }
 
+.button__gallery {
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline; }
+
 .gallery__img {
   width: 18em;
   height: 18em;
@@ -157,6 +193,18 @@ a:active {
 .section__img {
   max-width: 100%;
   height: auto; }
+
+.icon--carrito {
+  color: #2ecf2e; }
+
+.icon--instagram {
+  color: #c25e30; }
+
+.icon--facebook {
+  color: #3a5795; }
+
+.icon--twitter {
+  color: #55acee; }
 
 /*--------------------------galeria grid---------------------------------*/
 /* -------gallery-------- */
@@ -195,7 +243,7 @@ a:active {
   font-size: 0.8em;
   font-weight: bold;
   letter-spacing: 2px;
-  margin: 0; }
+  margin-bottom: 2rem; }
 
 /* -------footer-------- */
 .footer__store {
@@ -215,7 +263,7 @@ a:active {
 
 /*--------------------------sobre mi grid---------------------------------*/
 #about__grid {
-  background-color: #803c3c;
+  background-color: white;
   height: 100vh;
   width: 100%;
   display: grid;
@@ -238,17 +286,20 @@ a:active {
 
 #about__footer {
   grid-area: footer;
-  background-color: white; }
+  background-color: white;
+  border-top: 1px solid #c4c3c3; }
 
 /* --------button-------- */
-.button__about {
+.button, .button__about, .button__contact {
   padding: 1.5rem;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
-  list-style-type: none;
+  list-style-type: none; }
+
+.button__about {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -256,9 +307,9 @@ a:active {
 
 .idiom {
   color: white;
-  padding: 10px 16px 10px 16px;
   background-color: #c79d6c;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  padding: 10px 16px 10px 16px; }
 
 /* --------section-------- */
 .section__about {
@@ -322,7 +373,7 @@ a:active {
 
 /*--------------------------contacto grid---------------------------------*/
 #contact__grid {
-  background-color: #803c3c;
+  background-color: white;
   display: grid;
   height: 100vh;
   width: 100%;
@@ -350,13 +401,6 @@ a:active {
 
 /* --------button-------- */
 .button__contact {
-  padding: 1.5rem;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  list-style-type: none;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -425,6 +469,7 @@ a:active {
     justify-content: center; }
   .header__nav ul li {
     color: black;
+    text-decoration: none;
     line-height: 2.188rem;
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
@@ -440,6 +485,10 @@ a:active {
     margin-top: 1.5rem;
     width: 9rem; }
   .menu__icon {
+    display: none; }
+  .desplegable {
+    display: none; }
+  secciones {
     display: none; }
   .header__index {
     display: block;
@@ -506,7 +555,7 @@ a:active {
     border-right: 1px solid #c4c3c3; }
   /* --------button-------- */
   .button__gallery {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -532,10 +581,11 @@ a:active {
     border-bottom: none;
     border-right: 1px solid #c4c3c3; }
   #about__footer {
+    border-top: none;
     border-right: 1px solid #c4c3c3; }
   /* --------button-------- */
   .button__about {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -561,7 +611,7 @@ a:active {
     border-right: 1px solid #c4c3c3; }
   /* --------button-------- */
   .button__contact {
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
