@@ -11,13 +11,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Galería - Ari Mayorga Studio</title>
    <link rel="shorcut icon" href="../img/favicon.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../style/style.css">
    <link rel="stylesheet" href="../img/fonts/style.css">
+   <link rel="stylesheet" href="../style/style.css">
+   <title>Galería - Ari Mayorga Studio</title>
 </head>
 
 <body id="gallery__grid">
@@ -34,17 +34,26 @@
          </div>
       </div>
 
-      <nav class="header__nav">
-         <div class="desplegable">
-            <button class="boton"><img src="../img/iconos/menu2.png" alt="menu icon" class="menu__icon"></button>
-            <div class="secciones">
-               <a href="../index.html">INICIO</a>
-               <a href="../secciones/galeria.html">GALERÍA</a>
-               <a href="../secciones/tienda.html">TIENDA</a>
-               <a href="../secciones/sobremi.html">SOBRE MÍ</a>
-               <a href="../secciones/contacto.html">CONTACTO</a>
+      <nav class="navbar navbar-light desplegable">
+         <div class="container-fluid ">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+               <div class="navbar-nav ">
+                  <a class="nav-link" href="../index.html">INICIO</a>
+                  <a class="nav-link" href="./galeria.html">GALERÍA</a>
+                  <a class="nav-link" href="./tienda.html">TIENDA</a>
+                  <a class="nav-link" href="./sobremi.html">SOBRE MÍ</a>
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+               </div>
             </div>
          </div>
+      </nav>
+
+
+      <nav class="header__nav">
          <div class="menu__content">
             <ul>
                <li>
@@ -74,30 +83,77 @@
 
    <section id="gallery__section">
       <div class="container-fluid padding__container">
-         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 ">
+         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-evenly">
 
-            <div class="col padding__img"><img class=" gallery__img" src="../img/other/8_unic.jpg"
-                  alt="ilustracion: unico">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/8_unic.jpg" class="gallery__img card-img-top"
+                  alt="dos entidades sobre un crisantemo">
+               <div class="card-body">
+                  <h5 class="card-title">"Yo unico"</h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, digitalizada y posteriormente pintado de
+                     forma digital.</p>
+                  <p class="card-text"> Tamaño: 70 x 50 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
 
-            <div class="col padding__img"><img class="gallery__img" src="../img/other/7_face.jpg"
-                  alt="ilustracion: retrato">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/7_face.jpg" class="gallery__img card-img-top" alt="rostro de anciano">
+               <div class="card-body">
+                  <h5 class="card-title">"Ancestro"</h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, entintado mediante el uso de
+                     estilograficas.</p>
+                  <p class="card-text"> Tamaño: 21 x 29,7 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
 
-            <div class="col padding__img"><img class=" gallery__img" src="../img/other/6_mrblue.jpg"
-                  alt="ilustracion: unico">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/6_mrblue.jpg" class=" gallery__img card-img-top"
+                  alt="entidades tocando un craneo en entorno natural">
+               <div class="card-body">
+                  <h5 class="card-title">"Mr. Blue"</h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, entintado mediante el uso de
+                     estilograficas, formato grande.</p>
+                  <p class="card-text"> Tamaño: 70 x 50 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
 
-            <div class="col padding__img"><img class=" gallery__img" src="../img/other/4_ptv_sm.jpg"
-                  alt="ilustracion: portada ptv">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/4_ptv_sm.jpg" class="gallery__img card-img-top"
+                  alt="mujer sosteniendo la cabeza de un hombre degollado y otros muertos, en un entorno natural">
+               <div class="card-body">
+                  <h5 class="card-title">"Por Tus Venas" - Cap II</h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, digitalizada y posteriormente pintado de
+                     forma digital.</p>
+                  <p class="card-text"> Tamaño: 50 x 50 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
 
-            <div class="col padding__img"><img class="gallery__img" src="../img/other/1_spider_sm.jpg"
-                  alt="ilustracion: rejected">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/1_spider_sm.jpg" class="gallery__img card-img-top"
+                  alt="araña rompiendo el interior de una casa">
+               <div class="card-body">
+                  <h5 class="card-title">"Rejected"</h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, entintado mediante el uso de
+                     estilograficas, y pintado con acuarela.</p>
+                  <p class="card-text"> Tamaño: 50 x 50 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
 
-            <div class="col padding__img"><img class=" gallery__img" src="../img/other/5_movie.jpg"
-                  alt="ilustracion: movie">
+            <div class="card" style="width: 18rem;">
+               <img src="../img/other/5_movie.jpg" class="gallery__img card-img-top"
+                  alt="niños mirando pelicula de terror y mostrustruos a sus espaldas">
+               <div class="card-body">
+                  <h5 class="card-title">"Movie Night" - Zibilia </h5>
+                  <p class="card-text"> Ilustracion de elavoración analogica, entintado mediante el uso de
+                     estilograficas, formato grande.</p>
+                  <p class="card-text"> Tamaño: 70 x 50 cm.</p>
+                  <a href="#" class="btn btn-dark">Más Información</a>
+               </div>
             </div>
          </div>
       </div>
@@ -115,7 +171,7 @@
          <div class="newsletter__email">
             <label class="newsletter__email--title" for="email">NEWSLETTER</label>
             <input class="newsletter__email--box" type="email" name="email" placeholder="INGRESA TU EMAIL">
-            <input class="newsletter__email--button" type="submit" value="SUSCRIBIRSE">
+            <input class="newsletter__email--box" type="submit" value="SUSCRIBIRSE">
          </div>
       </form>
 

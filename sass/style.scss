@@ -97,7 +97,7 @@ $redes: (
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
     "header"
     "button"
@@ -172,6 +172,7 @@ $redes: (
   flex-grow: row nowrap;
   justify-content: space-evenly;
   padding: 0px 1.5rem 0px 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .footer__icons--size {
@@ -180,8 +181,7 @@ $redes: (
 }
 
 .footer__newsletter {
-  margin: 1.5rem;
-  /*padding-left: 2rem; */
+  padding: 0px 1rem 0px 1rem;
 }
 
 .newsletter__email--title {
@@ -202,12 +202,7 @@ $redes: (
   padding: 10px 0px 10px 13px;
   border-radius: 20px;
 }
-.newsletter__email--button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 9px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
+
 .derechos {
   margin-top: 10px;
   padding-left: 30px;
@@ -223,7 +218,7 @@ $redes: (
   height: 100vh;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
     "header"
     "button"
@@ -290,7 +285,7 @@ $redes: (
   /*--------------------------sobre mi grid---------------------------------*/
   #about__grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
       "header  header"
       "button button"
@@ -417,12 +412,6 @@ $redes: (
     width: 12.188rem;
     padding: 0.625rem 0px 0.625rem 0.813rem;
     border-radius: 1.25rem;
-  }
-  .newsletter__email--button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: 1px;
   }
   .derechos {
     margin-top: 10px;

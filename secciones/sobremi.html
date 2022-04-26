@@ -11,13 +11,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sobre Mí - Ari Mayorga Studio</title>
    <link rel="shorcut icon" href="../img/favicon.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../style/style.css">
    <link rel="stylesheet" href="../img/fonts/style.css">
+   <link rel="stylesheet" href="../style/style.css">
+   <title>Sobre Mí - Ari Mayorga Studio</title>
 </head>
 
 <body id="about__grid">
@@ -34,17 +34,26 @@
             <a href="../index.html"><img src="../img/logo_png.png" alt="logo" class="header__logo--img"></a>
          </div>
       </div>
-      <nav class="header__nav">
-         <div class="desplegable">
-            <button class="boton"><img src="../img/iconos/menu2.png" alt="menu icon" class="menu__icon"></button>
-            <div class="secciones">
-               <a href="../index.html">INICIO</a>
-               <a href="../secciones/galeria.html">GALERÍA</a>
-               <a href="../secciones/tienda.html">TIENDA</a>
-               <a href="../secciones/sobremi.html">SOBRE MÍ</a>
-               <a href="../secciones/contacto.html">CONTACTO</a>
+
+      <nav class="navbar navbar-light desplegable">
+         <div class="container-fluid ">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+               <div class="navbar-nav ">
+                  <a class="nav-link" href="../index.html">INICIO</a>
+                  <a class="nav-link" href="./galeria.html">GALERÍA</a>
+                  <a class="nav-link" href="./tienda.html">TIENDA</a>
+                  <a class="nav-link" href="./sobremi.html">SOBRE MÍ</a>
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+               </div>
             </div>
          </div>
+      </nav>
+
+      <nav class="header__nav">
          <div class="menu__content">
             <ul>
                <li>
@@ -95,7 +104,7 @@
          <div class="newsletter__email">
             <label class="newsletter__email--title" for="email">NEWSLETTER</label>
             <input class="newsletter__email--box" type="email" name="email" placeholder="INGRESA TU EMAIL">
-            <input class="newsletter__email--button" type="submit" value="SUSCRIBIRSE">
+            <input class="newsletter__email--box" type="submit" value="SUSCRIBIRSE">
          </div>
       </form>
 
